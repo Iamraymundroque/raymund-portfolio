@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raymund Roque - Virtual Assistant & Operations Specialist Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-nav {
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased custom-scrollbar selection:bg-sky-500 selection:text-white">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-800/80 px-4 lg:px-8 py-3.5 transition-all">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2.5 text-lg font-extrabold tracking-tight text-white group">
+        <span class="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center text-slate-950 font-black text-sm group-hover:scale-105 transition-transform">RR</span>
+        <span>Raymund<span class="text-sky-400">Roque</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+        <a href="#competencies" class="hover:text-sky-400 transition-colors">Services</a>
+        <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+        <a href="#education" class="hover:text-sky-400 transition-colors">Education</a>
+      </div>
+
+      <!-- Actions -->
+      <div class="flex items-center gap-3">
+        <button onclick="openGitHubModal()" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-sky-400 border border-sky-500/30 px-3.5 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all shadow-sm">
+          <i class="fa-brands fa-github text-sm"></i>
+          <span>Host on GitHub</span>
+        </button>
+        <a href="#contact" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-4 py-1.5 rounded-lg text-xs tracking-wide transition-all shadow-lg shadow-sky-500/20">
+          Hire Me
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 relative overflow-hidden border-b border-slate-800/50">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+
+      <!-- Text & Intro -->
+      <div class="flex-1 text-center md:text-left">
+        <!-- Tag / Badge -->
+        <div class="inline-flex items-center gap-2 bg-sky-950/80 border border-sky-500/40 px-3.5 py-1.5 rounded-full text-sky-300 text-xs font-bold tracking-wider uppercase mb-6 shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+          Virtual Assistant & Operations Specialist Portfolio
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-4">
+          Raymund Roque
+        </h1>
+        <p class="text-lg sm:text-xl font-medium text-slate-300 mb-6">
+          High-Level Executive Virtual Support & Process Optimization
+        </p>
+
+        <!-- Brief Pitch -->
+        <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl mb-8">
+          Bridging corporate rigor in Change Management, Service Delivery, and PMO operations into seamless virtual assistant support for busy executives and growing businesses.
+        </p>
+
+        <!-- Contact Pills -->
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs font-medium text-slate-300 mb-8">
+          <div class="flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md">
+            <i class="fa-solid fa-envelope text-sky-400"></i>
+            <span>iamraymundroque@gmail.com</span>
+          </div>
+          <div class="flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md">
+            <i class="fa-solid fa-phone text-sky-400"></i>
+            <span>+63 9750075633</span>
+          </div>
+          <div class="flex items-center gap-2 bg-slate-900 border border-slate-800 px-3 py-1.5 rounded-md">
+            <i class="fa-solid fa-location-dot text-sky-400"></i>
+            <span>Malolos, Bulacan</span>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+          <a href="#experience" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-sky-500/25 flex items-center gap-2">
+            <span>View Work Experience</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <button onclick="openGitHubModal()" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 px-6 py-3 rounded-xl text-sm font-semibold transition-all flex items-center gap-2">
+            <i class="fa-brands fa-github text-sky-400"></i>
+            <span>Deploy to GitHub Pages</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Professional Headshot -->
+      <div class="relative flex-shrink-0">
+        <div class="w-64 h-64 sm:w-80 sm:h-80 rounded-full border-4 border-sky-400 p-1.5 shadow-2xl shadow-sky-500/20 relative z-10 overflow-hidden bg-slate-900">
+          <img src="ICO01196_4.JPG"
+               alt="Raymund Roque Headshot"
+               class="w-full h-full object-cover object-top rounded-full">
+        </div>
+        <!-- Decorative Glow -->
+        <div class="absolute -inset-2 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full blur-xl opacity-20 -z-10"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="py-20 px-4 border-b border-slate-800/50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-sky-400 font-bold text-xs uppercase tracking-widest mb-2">Executive Summary</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Why Hire Me As Your VA?</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-sky-500/40 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Corporate Discipline</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Proven background in Change Management, Service Management, and PMO support ensuring structure, punctuality, and SLA accuracy.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-sky-500/40 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Operational Mastery</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Proficient in calendar coordination, executive reporting, resource capacity planning, and continuous service improvement workflows.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl hover:border-sky-500/40 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-5">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">Tech-Savvy Foundation</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Computer Engineering graduate with hands-on technical literacy, rapid tool adoption, and structured digital documentation skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="competencies" class="py-20 px-4 bg-slate-900/30 border-b border-slate-800/50">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-sky-400 font-bold text-xs uppercase tracking-widest mb-2">Core Services</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Competencies & Support Areas</h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fa-solid fa-user-gear text-sky-400 text-xl"></i>
+            <h3 class="text-lg font-bold text-white">Executive & Administrative Support</h3>
+          </div>
+          <ul class="space-y-2.5 text-slate-300 text-sm">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-check text-sky-400 text-xs mt-1"></i>
+              <span><b>Stakeholder & Vendor Management:</b> Direct line coordination & communication.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-check text-sky-400 text-xs mt-1"></i>
+              <span><b>Executive Reporting:</b> Executive summaries, agendas & calendar oversight.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fa-solid fa-diagram-project text-sky-400 text-xl"></i>
+            <h3 class="text-lg font-bold text-white">Project & Operations Management</h3>
+          </div>
+          <ul class="space-y-2.5 text-slate-300 text-sm">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-check text-sky-400 text-xs mt-1"></i>
+              <span><b>Resource & Capacity Planning:</b> Workforce scheduling & priority tracking.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-check text-sky-400 text-xs mt-1"></i>
+              <span><b>Governance Standards:</b> Project timeline tracking & KPI dashboard maintenance.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fa-solid fa-check-double text-sky-400 text-xl"></i>
+            <h3 class="text-lg font-bold text-white">Quality Control & Process Validation</h3>
+          </div>
+          <ul class="space-y-2.5 text-slate-300 text-sm">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-check text-sky-400 text-xs mt-1"></i>
+              <span><b>Change Management:</b> Workflow validation & Change Impact Assessments (CIA).</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-check text-sky-400 text-xs mt-1"></i>
+              <span><b>Content Review:</b> Documentation approval & process compliance checks.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <div class="flex items-center gap-3 mb-4">
+            <i class="fa-solid fa-chart-pie text-sky-400 text-xl"></i>
+            <h3 class="text-lg font-bold text-white">Performance & Data Tracking</h3>
+          </div>
+          <ul class="space-y-2.5 text-slate-300 text-sm">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-check text-sky-400 text-xs mt-1"></i>
+              <span><b>Metrics Analytics:</b> SLA, KPI monitoring & dashboard performance.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-check text-sky-400 text-xs mt-1"></i>
+              <span><b>Continuous Service Improvement:</b> Operational risk mitigation & CSI plans.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="py-20 px-4 border-b border-slate-800/50">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <p class="text-sky-400 font-bold text-xs uppercase tracking-widest mb-2">Track Record</p>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Professional Experience</h2>
+      </div>
+
+      <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+
+        <!-- Synapxe -->
+        <div class="relative pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-sky-400 group-hover:scale-125 transition-transform"></div>
+
+          <div class="md:absolute md:-left-36 md:top-1 text-xs font-semibold text-sky-400 bg-sky-950/80 border border-sky-500/30 px-3 py-1 rounded-full inline-block mb-3 md:mb-0">
+            Apr 2026 – Present
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all">
+            <h3 class="text-xl font-bold text-white mb-1">Change Management Analyst</h3>
+            <p class="text-sky-400 text-sm font-medium mb-4">Synapxe</p>
+            <ul class="space-y-2 text-slate-300 text-sm">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-angle-right text-sky-400 text-xs mt-1"></i>
+                <span>Validated process and workflow changes to maintain high accuracy and operational compliance.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-angle-right text-sky-400 text-xs mt-1"></i>
+                <span>Supported Change Impact Assessments (CIA) and approved critical business documentation.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Del Monte PMO -->
+        <div class="relative pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-sky-400 group-hover:scale-125 transition-transform"></div>
+
+          <div class="md:absolute md:-left-36 md:top-1 text-xs font-semibold text-slate-400 bg-slate-900 border border-slate-800 px-3 py-1 rounded-full inline-block mb-3 md:mb-0">
+            Apr 2025 – Mar 2026
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all">
+            <h3 class="text-xl font-bold text-white mb-1">Project Management Officer Analyst</h3>
+            <p class="text-sky-400 text-sm font-medium mb-4">Del Monte Bundled ITO</p>
+            <ul class="space-y-2 text-slate-300 text-sm">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-angle-right text-sky-400 text-xs mt-1"></i>
+                <span>Managed resource allocation, capacity planning, and workforce utilization across projects.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-angle-right text-sky-400 text-xs mt-1"></i>
+                <span>Maintained project schedules, KPI dashboards, and executive reporting standards.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Del Monte Service Management -->
+        <div class="relative pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-950 border-2 border-sky-400 group-hover:scale-125 transition-transform"></div>
+
+          <div class="md:absolute md:-left-36 md:top-1 text-xs font-semibold text-slate-400 bg-slate-900 border border-slate-800 px-3 py-1 rounded-full inline-block mb-3 md:mb-0">
+            Sept 2025 – Mar 2026
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:border-slate-700 transition-all">
+            <h3 class="text-xl font-bold text-white mb-1">Service Management Analyst</h3>
+            <p class="text-sky-400 text-sm font-medium mb-4">Del Monte Bundled ITO</p>
+            <ul class="space-y-2 text-slate-300 text-sm">
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-angle-right text-sky-400 text-xs mt-1"></i>
+                <span>Ensured strict SLA compliance, operational stability, and cross-functional team coordination.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i class="fa-solid fa-angle-right text-sky-400 text-xs mt-1"></i>
+                <span>Monitored performance metrics, managed operational risks, and executed CSI initiatives.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="py-20 px-4 bg-slate-900/30">
+    <div class="max-w-4xl mx-auto">
+
+      <!-- Education Box -->
+      <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl text-center mb-16 relative overflow-hidden">
+        <div class="w-16 h-16 bg-sky-500/10 text-sky-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-4">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h3 class="text-2xl font-extrabold text-white mb-2">Bachelor of Science in Computer Engineering</h3>
+        <p class="text-sky-400 font-semibold text-sm mb-1">Bulacan State University</p>
+        <p class="text-slate-400 text-xs font-medium">Graduated: Jun 2015 – Sept 2021</p>
+      </div>
+
+      <!-- Contact CTA -->
+      <div id="contact" class="text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Let's Work Together!</h2>
+        <p class="text-slate-400 text-base max-w-lg mx-auto mb-8">
+          Ready to streamline your operational processes and daily executive tasks. Reach out directly:
+        </p>
+
+        <div class="inline-flex flex-wrap items-center justify-center gap-4 bg-slate-900 border border-slate-800 p-3 rounded-2xl mb-8">
+          <a href="mailto:iamraymundroque@gmail.com" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-sm transition-all flex items-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>iamraymundroque@gmail.com</span>
+          </a>
+          <a href="tel:+639750075633" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all flex items-center gap-2">
+            <i class="fa-solid fa-phone text-sky-400"></i>
+            <span>+63 9750075633</span>
+          </a>
+        </div>
+
+        <p class="text-slate-500 text-xs">
+          © 2026 Raymund Roque • Virtual Assistant & Operations Portfolio
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="githubModal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 hidden">
+    <div class="bg-slate-900 border border-slate-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto custom-scrollbar p-6 sm:p-8 shadow-2xl relative">
+
+      <button onclick="closeGitHubModal()" class="absolute top-6 right-6 w-9 h-9 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white rounded-full flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 bg-sky-500/10 text-sky-400 rounded-2xl flex items-center justify-center text-2xl">
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <div>
+          <h3 class="text-2xl font-extrabold text-white">GitHub Pages Deployment Guide</h3>
+          <p class="text-slate-400 text-xs">Host your live VA portfolio web app for free</p>
+        </div>
+      </div>
+
+      <div class="space-y-6 text-sm text-slate-300">
+
+        <!-- Step 1 -->
+        <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl">
+          <h4 class="font-bold text-sky-400 mb-1">Step 1: Create a GitHub Repository</h4>
+          <p class="text-slate-400 text-xs mb-2">Log into <a href="https://github.com" target="_blank" class="underline text-sky-400">GitHub.com</a>, click <b>New Repository</b>, name it <code class="text-sky-300">va-portfolio</code>, and keep it <b>Public</b>.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl">
+          <h4 class="font-bold text-sky-400 mb-2">Step 2: Initialize Git & Push Code</h4>
+          <div class="bg-slate-900 p-3 rounded-lg font-mono text-xs text-sky-300 overflow-x-auto border border-slate-800 space-y-1">
+            <p>git init</p>
+            <p>git add .</p>
+            <p>git commit -m "Initial commit for Raymund Roque VA Portfolio"</p>
+            <p>git branch -M main</p>
+            <p>git remote add origin https://github.com/YOUR_USERNAME/va-portfolio.git</p>
+            <p>git push -u origin main</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-slate-950 border border-slate-800 p-4 rounded-xl">
+          <h4 class="font-bold text-sky-400 mb-1">Step 3: Enable GitHub Pages</h4>
+          <ol class="list-decimal list-inside text-xs text-slate-400 space-y-1">
+            <li>Go to your repository settings tab on GitHub.</li>
+            <li>Click <b>Pages</b> on the left sidebar under "Code and automation".</li>
+            <li>Under <b>Build and deployment</b> -> <b>Branch</b>, select <code class="text-sky-300">main</code> and click <b>Save</b>.</li>
+          </ol>
+        </div>
+
+        <!-- Live Link Outcome -->
+        <div class="bg-sky-950/40 border border-sky-500/30 p-4 rounded-xl text-center">
+          <i class="fa-solid fa-circle-check text-sky-400 text-xl mb-1"></i>
+          <p class="text-xs text-slate-300 font-medium">Your live portfolio URL will be:</p>
+          <p class="font-mono text-xs text-sky-300 font-bold mt-1">https://YOUR_USERNAME.github.io/va-portfolio/</p>
+        </div>
+
+      </div>
+
+      <div class="mt-6 text-right">
+        <button onclick="closeGitHubModal()" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold px-5 py-2 rounded-xl text-xs transition-all">
+          Got It!
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function openGitHubModal() {
+      document.getElementById('githubModal').classList.remove('hidden');
+    }
+    function closeGitHubModal() {
+      document.getElementById('githubModal').classList.add('hidden');
+    }
+  </script>
+
+</body>
+</html>
